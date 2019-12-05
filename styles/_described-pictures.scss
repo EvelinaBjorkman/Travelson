@@ -13,8 +13,7 @@
   }
 
   article {
-    flex-direction: column;
-    text-align: center;
+    @include flexbox(column, flex-start, center);
 
     @media (min-width: $screen-size--medium) {
       flex-direction: row;
@@ -48,5 +47,9 @@
       width: 100%;
       max-height: 400px;
     }
+  }
+
+  article + article {
+    margin-top: 40px;
   }
 }

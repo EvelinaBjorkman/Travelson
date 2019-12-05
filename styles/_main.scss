@@ -22,22 +22,8 @@ main section {
   padding-left: 20px;
 }
 
-.logo {
-  font-family: "Unica One", cursive;
-  width: 175px;
-  height: 30px;
-  background: $color--secondary-background;
-  color: $color--titel-pop;
-  text-align: center;
-  font-style: normal;
-  font-size: 26px;
-}
-
-a {
-  text-decoration: none;
-  color: #eaddd9;
-  font-size: 14px;
-  font-weight: bold;
+img {
+  object-fit: cover;
 }
 
 h1 {
@@ -85,15 +71,20 @@ p {
   }
 }
 
-article {
-  display: flex;
-  align-items: center;
+a {
+  text-decoration: none;
+  color: #eaddd9;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-article + article {
-  margin-top: 40px;
-}
-
-img {
-  object-fit: cover;
+.logo {
+  font-family: "Unica One", cursive;
+  width: 175px;
+  height: 30px;
+  background: $color--secondary-background;
+  color: $color--titel-pop;
+  text-align: center;
+  font-style: normal;
+  font-size: 26px;
 }
