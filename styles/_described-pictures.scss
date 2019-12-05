@@ -33,6 +33,10 @@
       }
     }
 
+    .take-half {
+      flex: 1 1 50%;
+    }
+
     .picture-text {
       @media (min-width: $screen-size--medium) {
         padding-left: 0;
