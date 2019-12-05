@@ -1,0 +1,50 @@
+.hero-img-section {
+  background-image: radial-gradient(
+      circle at 50% 0,
+      rgba(57, 73, 81, 0.5),
+      rgba(12, 32, 42, 0.8) 74%
+    ),
+    url(../img/hero/philipp-kammerer-6-mxb-m-z-q-8-e-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
+  height: 50vw;
+  max-height: 782px;
+  min-height: 580px;
+  width: 100%;
+  @include flexbox(row, center, flex-start);
+
+  @media (min-width: $screen-size--medium) {
+    justify-content: flex-start;
+  }
+
+  &__text-container {
+    color: $color--text-main-light;
+    font-weight: $font-wheight--bold;
+    text-align: center;
+    margin: 10vw;
+    margin-top: 100px;
+    flex-grow: inherit;
+
+    * {
+      transition: all 1s ease-in;
+    }
+
+    @media (min-width: $screen-size--small) {
+      max-width: 500px;
+    }
+
+    @media (min-width: $screen-size--medium) {
+      margin-left: 100px;
+    }
+
+    &__titel {
+      color: $color--titel-pop;
+      margin: 0;
+    }
+
+    &__paragraf {
+      margin: 0;
+    }
+  }
+}

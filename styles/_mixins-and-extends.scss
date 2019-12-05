@@ -1,0 +1,24 @@
+%position-absolute-100 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+%picture-text {
+  text-align: center;
+  padding: 40px;
+}
+
+@mixin img-wrapper($row, $column) {
+  position: relative;
+  grid-row: $row;
+  grid-column: $column;
+  @content;
+}
+
+@mixin flexbox($direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

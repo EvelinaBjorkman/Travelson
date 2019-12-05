@@ -1,0 +1,48 @@
+@import "mixins-and-extends";
+
+.described-pictures {
+  h2,
+  h3 {
+    color: $color--titel-muted;
+    padding-top: 20px;
+
+    @media (min-width: $screen-size--small) {
+      padding-top: 0px;
+      padding-bottom: 20px;
+    }
+  }
+
+  article {
+    flex-direction: column;
+    text-align: center;
+
+    @media (min-width: $screen-size--medium) {
+      flex-direction: row;
+
+      &:nth-of-type(odd) {
+        @media (min-width: $screen-size--medium) {
+          flex-direction: row-reverse;
+        }
+
+        .picture-text {
+          @media (min-width: $screen-size--medium) {
+            padding-left: 4em;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    .picture-text {
+      @media (min-width: $screen-size--medium) {
+        padding-left: 0;
+        padding-right: 4em;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-height: 400px;
+    }
+  }
+}

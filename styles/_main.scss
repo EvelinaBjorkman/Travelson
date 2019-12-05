@@ -1,0 +1,99 @@
+@import "./variables";
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: $color--main-background;
+}
+
+main section {
+  padding: 3em 2em;
+
+  @media (min-width: $screen-size--big) {
+    padding: 98px 150px;
+  }
+}
+
+.main-margin {
+  max-width: 1140px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.logo {
+  font-family: "Unica One", cursive;
+  width: 175px;
+  height: 30px;
+  background: $color--secondary-background;
+  color: $color--titel-pop;
+  text-align: center;
+  font-style: normal;
+  font-size: 26px;
+}
+
+a {
+  text-decoration: none;
+  color: #eaddd9;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 27px;
+  font-weight: $font-wheight--bold;
+  margin-top: 0;
+
+  @media (min-width: $screen-size--small) {
+    font-size: 52px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: $font-wheight--bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+
+  @media (min-width: $screen-size--small) {
+    font-size: 48px;
+  }
+
+  @media (min-width: $screen-size--big) {
+    margin-bottom: 40px;
+  }
+}
+
+h3 {
+  font-weight: $font-wheight--bold;
+  font-size: 25px;
+  margin-top: 0px;
+  text-align: center;
+
+  @media (min-width: $screen-size--small) {
+    font-size: 36px;
+  }
+}
+
+p {
+  font-size: 16px;
+
+  @media (min-width: $screen-size--small) {
+    font-size: 17px;
+  }
+}
+
+article {
+  display: flex;
+  align-items: center;
+}
+
+article + article {
+  margin-top: 40px;
+}
+
+img {
+  object-fit: cover;
+}
